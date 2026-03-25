@@ -1,0 +1,89 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "map_data.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "Fire.tsx": {
+            "dynamicWrapping": true,
+            "scaleInEditor": 1
+        },
+        "GiantSword.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Rocks.tsx": {
+            "dynamicWrapping": true
+        },
+        "Tree01.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "background.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "map_data.tmx": {
+            "scale": 4,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 641.875,
+                "y": 443.125
+            }
+        },
+        "map_data.tmx#tile_set": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tile_set.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tree.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "frame.defaultDuration": 100,
+    "last.exportedFilePath": "C:/Users/User/Desktop/java_advanced/final_project/src/data/info",
+    "last.imagePath": "C:/Users/User/Desktop/java_advanced/final_project/src/data/images/PackCharacterPixelArt09/Environments/Fire",
+    "map.height": 32,
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "tmx",
+    "map.renderOrder": "3",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 48,
+    "openFiles": [
+        "map_data.tmx",
+        "GiantSword.tsx"
+    ],
+    "project": "map_data.tiled-project",
+    "property.type": "string",
+    "recentFiles": [
+        "Fire.tsx",
+        "tree.tsx",
+        "GiantSword.tsx",
+        "map_data.tmx",
+        "background.tsx",
+        "tile_set.tsx",
+        "Tree01.tsx"
+    ],
+    "resizeMap.removeObjects": true,
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    },
+    "tileset.type": 1
+}

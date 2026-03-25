@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="app.data.scripts.CardGameController"
+            style="-fx-background-color: #232931;"
+            prefWidth="980" prefHeight="540">
+
+    <top>
+        <Label text="卡牌合成" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: white;"
+               alignment="CENTER" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets top="5" right="5" bottom="5" left="5"/>
+            </padding>
+        </Label>
+    </top>
+
+    <center>
+        <HBox spacing="10" alignment="CENTER">
+            <padding>
+                <Insets top="5" right="5" bottom="5" left="5"/>
+            </padding>
+
+            <VBox spacing="8" style="-fx-background-color: #111419; -fx-border-color: #000000; -fx-border-width: 1;"
+                  prefWidth="280" prefHeight="380">
+                <padding>
+                    <Insets top="8" right="8" bottom="8" left="8"/>
+                </padding>
+                <Label text="合成機制" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white"/>
+                <VBox fx:id="recipeMechanics" spacing="5"/>
+            </VBox>
+
+            <VBox spacing="5" alignment="CENTER" prefWidth="300">
+                <Label text="合成台" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;"/>
+                <HBox fx:id="craftingArea" spacing="5" style="-fx-background-color: #393E46; -fx-border-color: #000000; -fx-border-width: 1;"
+                      alignment="CENTER" prefHeight="100">
+                    <padding>
+                        <Insets top="5" right="5" bottom="5" left="5"/>
+                    </padding>
+                </HBox>
+                <Button text="合成" fx:id="craftButton"
+                        style="-fx-font-size: 14; -fx-background-color: #000000; -fx-text-fill: white;">
+                    <padding>
+                        <Insets top="5" right="15" bottom="5" left="15"/>
+                    </padding>
+                </Button>
+            </VBox>
+
+            <VBox spacing="8" style="-fx-background-color: #111419; -fx-border-color: #000000; -fx-border-width: 1;"
+                  prefWidth="280" prefHeight="380">
+                <padding>
+                    <Insets top="8" right="8" bottom="8" left="8"/>
+                </padding>
+                <Label text="技能介绍" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white"/>
+                <VBox fx:id="skillInfoArea" spacing="5"/>
+            </VBox>
+        </HBox>
+    </center>
+
+    <bottom>
+        <HBox spacing="15" alignment="CENTER" style="-fx-background-color: #393E46; -fx-border-color: #000000; -fx-border-width: 1;"
+              prefHeight="80">
+            <padding>
+                <Insets top="5" right="5" bottom="5" left="5"/>
+            </padding>
+            <HBox spacing="15" alignment="CENTER" HBox.hgrow="ALWAYS">
+                <VBox spacing="3" alignment="CENTER">
+                    <Label text="技能欄" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-text-fill: white;"/>
+                    <HBox fx:id="skillBar" spacing="8" alignment="CENTER"/>
+                </VBox>
+                <VBox spacing="3" alignment="CENTER">
+                    <Label text="卡牌欄" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-text-fill: white;"/>
+                    <HBox fx:id="cardBar" spacing="8" alignment="CENTER"/>
+                </VBox>
+            </HBox>
+
+            <Button text="開始遊戲" fx:id="startGame"  mnemonicParsing="false" onAction="#handleStartGame"
+                    style="-fx-font-size: 14; -fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;">
+                <padding>
+                    <Insets top="8" right="20" bottom="8" left="20"/>
+                </padding>
+            </Button>
+        </HBox>
+    </bottom>
+</BorderPane>
