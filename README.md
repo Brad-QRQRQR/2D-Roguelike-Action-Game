@@ -31,12 +31,15 @@ For this project, my primary responsibility was architecting the underlying **Ga
 ### 2. Custom Game Engine (`src/app/data/scripts/engine` directory)
 I designed and built the internal 2D engine components from scratch, which include:
 
-* **Entity System (`engine.entity`):** * Created the base `Entity` classes and `EntityGroup` management.
+* **Entity System (`engine.entity`):**
+    * Created the base `Entity` classes and `EntityGroup` management.
     * Implemented a Chunk Manager (`ChunkGroupManager`, `RectChunkGroupManager`) for optimized rendering and spatial partitioning.
     * Built the physics foundations, including `Gravity`, `SpeedVector`, and dynamic update strategies.
-* **Finite State Machine (FSM) (`engine.FSM`):** * Developed a flexible FSM system (`StateMachine`, `StateExec`, `StateTransition`, `StateTransCond`).
+* **Finite State Machine (FSM) (`engine.FSM`):**
+    * Developed a flexible FSM system (`StateMachine`, `StateExec`, `StateTransition`, `StateTransCond`).
     * This architecture allows complex behaviors and animations for the Player and Enemies to be easily managed and decoupled from the main logic.
-* **Collision Detection System (`engine.collision`):** * Implemented Axis-Aligned Bounding Box (AABB) collision algorithms (`RectToRect`).
+* **Collision Detection System (`engine.collision`):**
+    * Implemented Axis-Aligned Bounding Box (AABB) collision algorithms (`RectToRect`).
     * Created `HandleCollision` and `HitBox` logic to manage physics boundaries, weapon strikes, and platforming mechanics.
 * **Engine Tools (`engine.tools`):**
     * Developed the `GameCamera` for smooth player tracking.
